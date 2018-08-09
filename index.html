@@ -7,7 +7,7 @@
     <title>Invie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <style>
+    <style media="screen">
         body {
             margin: 0;
         }
@@ -16,15 +16,30 @@
             max-width: 100%;
             vertical-align: top;
         }
+        
+        img#invieResponsive {
+            display: none;
+        }
+        
+        @media screen and (max-width: 760px) {
+            img#invieResponsive {
+                display: block;
+            }
+            img#noResponsive {
+                display: none;
+            }
+        }
     </style>
     <script src="main.js"></script>
 </head>
 
 <body>
-    <img src="img/header.jpg" alt="header">
-    <img src="img/hero.jpg" alt="hero">
-    <img src="img/acustica.jpg" alt="acustica">
-    <img src="img/clasica.jpg" alt="clasica">
+    <img src="img/invie-responsive.png" alt="invie-responsive" id="invieResponsive">
+    <img src="img/header.jpg" alt="" id="noResponsive">
+    <img src="img/hero.jpg" alt="" id="noResponsive">
+    <img src="img/acustica.jpg" alt="" id="noResponsive">
+    <img src="img/clasica.jpg" alt="" id="noResponsive">
+
 </body>
 
 </html>n
